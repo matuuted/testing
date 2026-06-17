@@ -1,0 +1,23 @@
+---
+:source:
+  :file: test/test_hx711_logic.c
+  :dirname: test
+  :basename: test_hx711_logic.c
+:successes:
+- :test: test_read_weight_converts
+  :line: 27
+  :message: ''
+  :unity_test_time: 0
+- :test: test_read_weight_timeout_returns_error
+  :line: 38
+  :message: ''
+  :unity_test_time: 0
+:failures: []
+:ignores: []
+:counts:
+  :total: 2
+  :passed: 2
+  :failed: 0
+  :ignored: 0
+:stdout: []
+:time: 0.008576804000313132

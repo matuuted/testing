@@ -1,0 +1,48 @@
+:project:
+  :use_exceptions: FALSE
+  :use_mocks: TRUE
+  :use_test_preprocessor: :all
+  :build_root: build
+  :test_file_prefix: test_
+  :which_ceedling: gem
+  :default_tasks:
+    - test:all
+
+:paths:
+  :test:
+    - +:test/**
+  :source:
+    - src/**
+  :include:
+    - src/**
+
+:defines:
+  :test: []
+
+# --- Coverage (gcov + gcovr) --------------------------------------------
+:gcov:
+  :reports:
+    - HtmlDetailed
+    - Text
+  :gcovr:
+    :report_include: '^src'
+
+# --- CMock: mock style ---------------------------------------------------
+:cmock:
+  :mock_prefix: mock_
+  :when_no_prototypes: :warn
+  :enforce_strict_ordering: TRUE
+  :plugins:
+    - :ignore
+    - :return_thru_ptr
+  :treat_as:
+    uint8_t: HEX8
+    int32_t: INT
+
+:tools: {}
+
+:plugins:
+  :enabled:
+    - report_tests_pretty_stdout
+    - gcov
+...

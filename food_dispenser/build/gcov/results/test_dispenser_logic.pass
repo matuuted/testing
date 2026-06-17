@@ -1,0 +1,31 @@
+---
+:source:
+  :file: test/test_dispenser_logic.c
+  :dirname: test
+  :basename: test_dispenser_logic.c
+:successes:
+- :test: test_sm_init_boot
+  :line: 13
+  :message: ''
+  :unity_test_time: 0
+- :test: test_sm_idle_to_dispensing
+  :line: 20
+  :message: ''
+  :unity_test_time: 0
+- :test: test_sm_dispensing_and_terminal_states
+  :line: 33
+  :message: ''
+  :unity_test_time: 0
+- :test: test_convert_to_grams
+  :line: 42
+  :message: ''
+  :unity_test_time: 0
+:failures: []
+:ignores: []
+:counts:
+  :total: 4
+  :passed: 4
+  :failed: 0
+  :ignored: 0
+:stdout: []
+:time: 0.011805663000359345
