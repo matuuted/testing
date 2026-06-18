@@ -10,7 +10,7 @@
 
 TEST_SOURCE_FILE("hx711_logic.c")
 
-#define HX711_CH_TANK_  0U
+#define HX711_CH_TANK_  0
 
 void setUp(void)
 {
